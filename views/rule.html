@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<title>规则-投票</title>
+	<link rel="stylesheet" href="../css/cj.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<input type="hidden" id="voteId" value="1"/>
+<body class="pb_80 b_bc">
+<!--规则标题-->	
+<section class="title">活动规则</section>
+<!--规则标题 /-->
+<!--规则列表-->
+<section class="rule_box"><img src="../images/banner.jpg"/></section>
+<section class="rule_box">
+	<div class="title">
+		<h2>活动时间</h2>
+		<span>Activity time</span>
+	</div>
+	<div class="info">
+		报名时间：<br>
+		2016-03-13 13:59 至 2016-03-31 13:59<br>
+		投票时间：<br>
+		2016-03-13 13:59 至 2016-03-31 13:59
+	</div>
+</section>
+<section class="rule_box">
+	<div class="title">
+		<h2>参赛规则</h2>
+		<span>Competition rules</span>
+	</div>
+	<div class="info">
+		喜欢玩并敢于挑战的伙伴们都可以参与！<br>
+		每人每天可投3票。<br>
+		<span class="red">注：</span><br>
+		1、请在报名时填写真实姓名及手机号码，否则无效；<br>
+		2、重复报名，只取投票数最高一个名次。<br>
+		3、最终解释权归温州众游网络科技有限公司所有。<br>
+		4、任何不懂问题可以直接询问客服：13736970445 <br>
+		（同微信号）
+	</div>
+</section>
+<section class="rule_box">
+	<div class="title">
+		<h2>如何参与</h2>
+		<span>How to Participate</span>
+	</div>
+	<div class="info">
+		关注<span class="red">【众游网络】</span>微信公众号<br>
+		回复“投票”-> 我要报名 -> 填写您的信息<br>
+		<span class="red">规则：</span><br>
+		1、每天每人可投3票<br>
+		2、前30名获得【恐怖医院+古墓丽影+深牢逃脱+镜子迷宫】的免费门票并获得参赛资格<br>
+		3、30~40名免费获得门票参观体验并自动成为后补参赛选手（若有正式选手放弃比赛，后补参赛选手按照排名进行补位）<br>
+		4、得票数达到100票的选手，即可获赠【地牢逃脱】门票一张（除参赛人员）<br>
+		<span class="red">赶紧行动起来，高达10000元的大奖等您来拿！</span>
+	</div>
+</section>
+<section class="rule_box">
+	<div class="title">
+		<h2>奖项设置</h2>
+		<span>The Award Setting</span>
+	</div>
+	<div class="info tc">
+		<img src="../images/top1.png" width="100px" /><br>
+		<h3>一等奖1名</h3>
+		每名奖励现金<span class="red">5000元</span><br>
+		<img src="../images/top2.png" width="100px" /><br>
+		<h3>二等奖1名</h3>
+		每名奖励现金<span class="red">1000元</span><br>	
+		<img src="../images/top3.png" width="100px" /><br>
+		<h3>三等奖1名</h3>
+		每名奖励现金<span class="red">500元</span><br>	
+	</div>
+	<div class="info tc b_bc dd_t">
+		<img src="../images/topall.png" width="100px" /><br>
+		<h3>参与奖1000名</h3>
+		每名奖励【地牢逃脱】门票<span class="red">1张</span><br>	
+	</div>
+</section>
+<!--规则列表 /-->
+<!--往期下期-->
+<section class="toggle_vote" style="display: none;">
+	<a href="beforeList.html">往期回顾</a>
+	<a href="afterVote.html">下期预告</a>
+</section>
+<!--往期下期 /-->
+<!--底部 -->
+<footer>
+	<a href="index.html"><span class="i_home"></span>首页</a>
+	<a href="ranking.html"><span class="i_ranking"></span>排名</a>
+	<a href="signUp.html"><span class="i_sign_up"></span>报名</a>
+	<a href="rule.html"><span class="i_rule"></span>规则</a> 
+	<a href="user.html"><span class="i_user"></span>我的</a>
+	<div class="last" id="toggleVote"><i class="arrow"></i></div>
+</footer>
+<!--全局搜索-->
+<div class="common_search_box">
+	<form action="index.html" method="get">
+		<div class="search_bg">
+			<div class="search">
+				<input type="text" name="key" placeholder="请输入选手名称或者编号进行搜索" value="" />
+				<input type="submit" value=""/>
+			</div>
+		</div>
+	</form>	
+</div>
+<div class="dialog"></div>
+<i class="f_search pos_a" id="showSearch"></i>
+<!--全局搜索 /-->
+</body>
+</html>
+<script src="../vender/jquery/jquery-1.11.1.js"></script>
+<script src="../scripts/cj.js"></script>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<title>选手详情-投票</title>
+	<link rel="stylesheet" href="../css/cj.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<input type="hidden" id="voteId" value="1"/>
+<body class="pb_80">
+<!--选手基本资料-->
+<section class="palyer_det">
+	<a href="index.html"><div class="go_back"></div></a>
+	<img src="../images/player1.jpg" width="100%"/>
+	<div class="info">
+		<div class="fl">1号 廖立生<span>距离上一名还差7票</span></div>
+		<div class="fr">得票: <b class="num_1">9</b>  排名: 21</div>
+	</div>
+	<div class="vote_btn_box">
+		<span class="vote_btn" onclick="votesTo(1)">投票</span>
+	</div>
+</section>
+<div class="palyerbg"></div>
+<!--选手基本资料 /-->
+<!--宣言-->
+<section class="palyer_more">
+	<h2>参赛宣言</h2>
+	<div class="details">
+		有胆就放马过来！热爱挑战的我期待你的到来！
+	</div>
+	<h2>个人资料</h2>
+	<div class="details" data-toggle="show">
+		<div class="han">
+			<label>昵称</label>
+			<div>妞妞</div>
+		</div>
+		<div class="han">
+			<label>工作地</label>
+			<div>浙江温州</div>
+		</div>
+		<div class="han">
+			<label>年龄</label>
+			<div>22</div>
+		</div>
+		<div class="han">
+			<label>身高</label>
+			<div>165cm</div>
+		</div>
+		<div class="han">
+			<label>学校</label>
+			<div>浙江大学</div>
+		</div>
+		<div class="han">
+			<label>职业</label>
+			<div>平面设计</div>
+		</div>
+	</div>
+	<h2>更多展示</h2>
+	<div class="details" data-toggle="show">
+		<img src="../images/d1.jpg"/>
+		<h1>马尔代夫形象大使</h1>
+		<p>兴化，在江南小桥流水的小镇中，最初是不被人所知的。因着那一簇簇的金黄，人们蜂拥而至。每年的四月间，正是油菜花烂漫之时，千百垛田漂浮于水中，乘一叶扁舟便可尽收眼底。油菜花随风摆动，香气扑鼻，让人如痴如醉。除了油菜花，来到兴化不妨早起吃个早茶，去到兴化老街上走一遭，待到傍晚时，霞光霭霭，镀一层暖光，这时的油菜花才真正活了起来。</p>
+		<img src="../images/d2.jpg"/>
+		<h1>参加央视歌舞比赛</h1>
+		<p>兴化，在江南小桥流水的小镇中，最初是不被人所知的。因着那一簇簇的金黄，人们蜂拥而至。每年的四月间，正是油菜花烂漫之时，千百垛田漂浮于水中，乘一叶扁舟便可尽收眼底。油菜花随风摆动，香气扑鼻，让人如痴如醉。除了油菜花，来到兴化不妨早起吃个早茶，去到兴化老街上走一遭，待到傍晚时，霞光霭霭，镀一层暖光，这时的油菜花才真正活了起来。</p>
+	</div>
+</section>
+<!--宣言 /-->
+<!--发布评论-->
+<seciton class="comment_post">
+	<img src="../images/tx_.jpg"/>
+	<textarea id="comment" placeholder="请输入对此选手的评论。"></textarea>
+	<span>发表</span>
+</seciton>
+<!--发布评论 /-->
+<!--评论列表-->
+<section class="comment_list">
+	<input type="hidden" id="page" value="1" />
+	<h2>网友评论</h2>
+	<ul id="comLi">
+		
+	</ul>
+	<div class="ajax_btn">
+		更多评论（<span id="surplus">0</span>）<i class="down"></i>
+	</div>
+</section>
+<!--评论列表 /-->
+<!--评论浮动框-->
+<div class="comment_fixed">
+	<div class="to_comment">发表评论</div>
+	<div class="comment_num" id="total">0</div>
+</div>
+<!--评论浮动框 /-->
+<!--底部-->
+<div class="player_footer">
+	<a href="index.html">返回首页</a>
+	<span>|</span>
+	<a href="tel:13736970445">客服电话：13736970445</a>
+	<span>|</span>
+	<a href="javascript:scroll(0,0)">返回顶部</a>
+	<p>©2016众游网络</p>
+</div>
+<!--底部 /-->
+</body>
+</html>
+<script src="../vender/jquery/jquery-1.11.1.js"></script>
+<script src="../scripts/cj.js"></script>
+<script src="../scripts/player.js"></script>
+<script src="../scripts/comment.js"></script>
